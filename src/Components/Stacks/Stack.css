@@ -1,0 +1,55 @@
+.stack {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	flex-wrap: wrap;
+	/* margin-top: -5rem; */
+	margin-bottom: 2rem;
+	padding: 1rem 1.5rem;
+}
+.s_left {
+	flex: 40%;
+}
+.s_right {
+	flex: 60%;
+}
+
+.icons {
+	list-style: none;
+	font-size: 3rem;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	cursor: pointer;
+}
+
+.icon {
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.icon i {
+	color: var(--orange);
+}
+
+.icon :hover {
+	transform: scale(1.2);
+}
+
+.icon p {
+	font-size: 11px;
+}
+.stackDesc {
+	list-style: none;
+	font-size: 1rem;
+	line-height: 1.7rem;
+}
+@media screen and (max-width: 767px) {
+	.stack {
+		flex-direction: column-reverse;
+	}
+	.stackDesc {
+		text-align: center;
+	}
+}

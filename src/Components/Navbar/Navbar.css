@@ -1,0 +1,105 @@
+.navbar {
+	padding: 1rem;
+}
+.dark-menu {
+	background-color: var(--darkBackground) !important;
+	color: white !important;
+}
+
+.sarath {
+	font-family: monospace;
+	font-weight: 700;
+	letter-spacing: 0.1rem;
+	color: var(--black);
+	font-size: 1.6rem;
+}
+
+.sarath:hover {
+	color: var(--orange) !important;
+	transform: scaleX(1.1);
+}
+
+.menuItem {
+	color: var(--black);
+	font-size: 1.2rem;
+	padding: 0px, 5px;
+}
+.menuItem:hover {
+	color: var(--orangeCard) !important;
+	transform: scaleX(1.1);
+}
+
+#checkbox {
+	display: none;
+}
+
+.hamburger {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	cursor: pointer;
+}
+.line {
+	position: absolute;
+	width: 20px;
+}
+
+.line-main::before,
+.line-main::after,
+.line-split::before,
+.line-split::after {
+	content: "";
+	position: absolute;
+	width: inherit;
+	height: 2px;
+	background-color: var(--orange);
+	transition: transform 0.5s;
+}
+
+.line-main::before {
+	transform: translateY(-7px);
+}
+
+.line-main::after {
+	transform: translateY(7px);
+}
+
+.line-split::before,
+.line-split::after {
+	width: 10px;
+	transition: transform 0.5s opacity 0.5s;
+}
+
+.line-split::after {
+	transform: translateX(10px);
+}
+
+#checkbox:checked ~ .line-main::before {
+	transform: rotate(45deg);
+}
+
+#checkbox:checked ~ .line-main::after {
+	transform: rotate(-45deg);
+}
+
+#checkbox:checked ~ .line-split::before {
+	transform: translateX(-10px);
+	opacity: 0;
+}
+
+#checkbox:checked ~ .line-split::after {
+	transform: translateX(20px);
+	opacity: 0;
+}
+
+@media screen and (max-width: 991px) {
+	.menuItem:hover {
+		transform: scaleX(1);
+		-moz-transform: scaleX(1);
+		-webkit-transform: scaleX(1);
+		-o-transform: scaleX(1);
+		-ms-transform: scaleX(1);
+	}
+}

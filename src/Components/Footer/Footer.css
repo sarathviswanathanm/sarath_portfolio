@@ -1,0 +1,30 @@
+.footer {
+	margin-top: 10rem;
+	border-top: 2px solid var(--orange);
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	padding: 2rem 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--orange);
+}
+
+.socialMediaIcons {
+	display: flex;
+	gap: 1rem;
+}
+
+.myName {
+	font-family: cursive;
+}

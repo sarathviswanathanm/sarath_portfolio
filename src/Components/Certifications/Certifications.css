@@ -1,0 +1,86 @@
+.certifications {
+	margin-top: 7rem;
+	padding: 1rem 1.5rem;
+}
+.certificates {
+	display: flex;
+	gap: 1.2rem;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.customCard {
+	width: 320px;
+	height: 250px;
+	border-radius: 30px;
+	background-color: transparent;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all 0.25s ease;
+	backface-visibility: hidden;
+}
+
+.customCard:hover {
+	transform: scale(0.9);
+}
+.customCard:hover:after {
+	height: 280px;
+}
+
+.customCard:hover .con-text p {
+	margin-bottom: 0px;
+	opacity: 1;
+}
+
+.customCard:hover img {
+	transform: scale(1.25);
+}
+.customCard:after {
+	width: 100%;
+	content: "";
+	left: 0px;
+	bottom: 0px;
+	height: 150px;
+	position: absolute;
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
+	z-index: 20;
+	transition: all 0.25s ease;
+}
+
+.customCard img {
+	height: 100%;
+	z-index: 10;
+	transition: all 0.25s ease;
+}
+
+.customCard .con-text {
+	z-index: 30;
+	position: absolute;
+	bottom: 0px;
+	color: #fff;
+	padding: 20px;
+	padding-bottom: 30px;
+}
+
+.customCard .con-text p {
+	font-size: 0.8rem;
+	opacity: 0;
+	margin-bottom: -170px;
+	transition: all 0.25ss ease;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.con-text h3 {
+	font-size: 1.3rem;
+}
