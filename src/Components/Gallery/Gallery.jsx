@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -10,14 +10,17 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
 
 const Gallery = () => {
+	const imagesArray = useMemo(() => images, []);
 	return (
 		<Fade bottom duration={1000} distance="40px">
 			<div className="gallery" id="gallery">
 				<h3>I Love Freezing the Moment </h3>
-				<ImageGallery
-					items={images}
-					additionalClass="my-custom-gallery"
-				/>
+				{imagesArray && (
+					<ImageGallery
+						items={imagesArray}
+						additionalClass="my-custom-gallery"
+					/>
+				)}
 			</div>
 		</Fade>
 	);
