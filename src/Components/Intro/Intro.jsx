@@ -8,6 +8,7 @@ import StyleContext from "../../Context/StyleContext";
 import Pulse from "react-reveal/Pulse";
 import Fade from "react-reveal/Fade";
 import resumePdf from "../../Sarath Viswanathan M.pdf";
+import resumePdfUAE from "../../Sarath_Viswanathan_M_CV_UAE.pdf";
 
 import "./Intro.css";
 
@@ -50,7 +51,7 @@ const Intro = () => {
 						<button
 							className="button i-button"
 							onClick={() => {
-								window.open(resumePdf);
+								window.open(resumePdfUAE);
 							}}
 						>
 							See Resume
