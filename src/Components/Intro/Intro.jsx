@@ -1,14 +1,9 @@
 import React, { useContext } from "react";
-import me from "../../img/Sarath_intro.png";
-import me2 from "../../img/SarathIntroNew.png";
-import github from "../../img/github.png";
 import linkedIn from "../../img/linkedin.png";
 import instagram from "../../img/instagram.png";
 import StyleContext from "../../Context/StyleContext";
-import Pulse from "react-reveal/Pulse";
 import Fade from "react-reveal/Fade";
-import resumePdf from "../../Sarath Viswanathan M.pdf";
-import resumePdfUAE from "../../Sarath_Viswanathan_M_CV_UAE.pdf";
+import resumePdf from "../../Sarath_Viswanathan_M.pdf";
 
 import "./Intro.css";
 
@@ -28,12 +23,20 @@ const Intro = () => {
 
 						<Fade left cascade>
 							<p>
-								Prolific front-end web developer building world-class web
-								applications with a passion for metrics and surpassing previous
-								benchmarks. Proficient in an assortment of technologies,
-								including JavaScript, TypeScript, HTML, CSS, React, and Remix.
-								Certified SAFe 5 Practitioner. A self-motivated and
-								collaborative team player.
+								Senior Frontend Engineer with 6 years of experience building
+								scalable, high-performance web applications using React and
+								TypeScript. I specialize in architecting complex, data-driven
+								interfaces and turning heavy workflows into fast, intuitive user
+								experiences. <br />
+								I’ve led the development of systems that transform multi-step,
+								time-intensive processes into real-time applications,
+								significantly improving performance, reliability, and user
+								engagement.
+								<br />
+								My focus areas include frontend architecture, performance
+								optimization (Core Web Vitals), and building reusable design
+								systems that help teams scale efficiently and ship with
+								confidence.
 							</p>
 						</Fade>
 					</div>
@@ -51,7 +54,7 @@ const Intro = () => {
 						<button
 							className="button i-button"
 							onClick={() => {
-								window.open(resumePdfUAE);
+								window.open(resumePdf);
 							}}
 						>
 							See Resume
@@ -59,13 +62,6 @@ const Intro = () => {
 					</div>
 
 					<div className="i-icons">
-						<a
-							href="https://github.com/sarathviswanathanm"
-							target="_blank"
-							rel="noreferrer"
-						>
-							<img src={github} alt="" />
-						</a>
 						<a
 							href="https://www.linkedin.com/in/sarath-viswanathan-m-371517141/"
 							target="_blank"
@@ -83,7 +79,7 @@ const Intro = () => {
 					</div>
 				</div>
 
-				<div className="i_right">
+				{/* <div className="i_right">
 					<Pulse>
 						<div className="myPhotoDiv">
 							<div className="photo">
@@ -91,7 +87,7 @@ const Intro = () => {
 							</div>
 						</div>
 					</Pulse>
-				</div>
+				</div> */}
 			</div>
 		</Fade>
 	);

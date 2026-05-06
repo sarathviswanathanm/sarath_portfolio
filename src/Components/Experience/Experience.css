@@ -23,6 +23,40 @@ h3 {
 h5 {
 	text-align: center;
 }
+
+.role-progression {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 0.4rem 1rem;
+	margin: 0.6rem 0 0.8rem;
+	font-size: 0.9rem;
+}
+
+.role-title {
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+}
+
+.role-badge {
+	font-size: 0.7rem;
+	font-weight: 700;
+	color: #fff;
+	background-color: var(--orange);
+	padding: 1px 7px;
+	border-radius: 999px;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+.role-dates {
+	color: var(--orange);
+	font-size: 0.85rem;
+}
+
 .experience_body hr {
 	width: 75vw;
 	height: 2px;

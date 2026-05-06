@@ -2,26 +2,21 @@ import React, { useRef, useEffect } from "react";
 import Lottie from "lottie-web";
 import Fade from "react-reveal/Fade";
 import GL from "../../img/gl_logo.png";
-import KKonnect from "../../img/Kkonnect1.png";
+import Karkhana from "../../img/Karkhana Logo.png";
 import "./Experience.css";
 
 const Experience = () => {
-	const org = useRef(null);
-	const org1 = useRef(null);
+	const orgGL = useRef(null);
+	const orgKK = useRef(null);
 	useEffect(() => {
-		Lottie.loadAnimation({
-			container: org.current,
-			renderer: "svg",
-			loop: true,
-			autoplay: true,
-			animationData: require("../../img/org.json"),
-		});
-		Lottie.loadAnimation({
-			container: org1.current,
-			renderer: "svg",
-			loop: true,
-			autoplay: true,
-			animationData: require("../../img/org.json"),
+		[orgKK, orgGL].forEach((ref) => {
+			Lottie.loadAnimation({
+				container: ref.current,
+				renderer: "svg",
+				loop: true,
+				autoplay: true,
+				animationData: require("../../img/org.json"),
+			});
 		});
 	}, []);
 	return (
@@ -29,65 +24,75 @@ const Experience = () => {
 			<div className="experience" id="experience">
 				<h3>My Career</h3>
 				<div className="card" style={{ backgroundColor: "transparent" }}>
+					{/* Karkhana */}
 					<div className="card-body experience_body">
-						<h5>Frontend Software Developer</h5>
+						<h5>Karkhana.io (Dashnode.ai) — Bengaluru</h5>
+						<div className="role-progression">
+							<span className="role-title">
+								Senior Full Stack Developer (Frontend-Focused)
+								<span className="role-badge">Promoted</span>
+							</span>
+							<span className="role-dates">Apr 2025 – Present</span>
+							<span className="role-title">Frontend Software Developer</span>
+							<span className="role-dates">Jul 2022 – Mar 2025</span>
+						</div>
 						<hr />
 						<div className="experience_content">
 							<div className="e-left">
 								<div className="company_logo_karkhana">
-									<img src={KKonnect} alt="" />
+									<img src={Karkhana} alt="Karkhana.io" />
 								</div>
-								<text className="company">Karkhana</text>
+								<text className="company">Karkhana.io</text>
 							</div>
 							<div className="e-middile">
 								<Fade left cascade>
 									<ul className="experienceDesc">
 										<li>
-											Developed multiple portals for both customers and
-											suppliers to make digital manufacturing process easy.
+											Led frontend architecture for a real-time CAD costing
+											engine (React, TypeScript, Three.js), scaling to handle{" "}
+											<strong>10× model complexity</strong> over 12 months.
 										</li>
 										<li>
-											Delivered projects on time, following agile development
-											methodologies (completed 4 portals in last 1 year).
+											Reduced customer quote turnaround from{" "}
+											<strong>~3 days to under 5 minutes</strong> by
+											architecting the end-to-end costing engine frontend.
 										</li>
 										<li>
-											Executed comprehensive testing procedures, identifying and
-											resolving software bugs promptly to ensure stability
-											across range of devices and browsers.
+											Built and scaled a company-wide design system (Chakra UI +
+											Storybook), improving dev speed <strong>~40%</strong>{" "}
+											across 4+ portals.
 										</li>
 										<li>
-											Worked closely with back-end developers for seamless
-											integration of front-end and back-end systems, and also
-											performed some basic back-end tasks in Frappe framework.
+											Designed Redux Toolkit state architecture adopted across
+											4+ portals, reducing production bugs by{" "}
+											<strong>~60%</strong>.
 										</li>
 										<li>
-											Collaborated with UI/UX designers and product team to
-											match visual design intent.
-										</li>
-										<li>Implemented state-management using Redux.</li>
-										<li>
-											Created reusable UI component library using ReactTS,
-											RemixJs, ChakraUI, and maintained Storybook.
+											Improved performance (Core Web Vitals, code-splitting,
+											lazy-loading), cutting load time to{" "}
+											<strong>~1.8 s</strong> with 90+ Lighthouse scores.
 										</li>
 										<li>
-											Utilized version control systems to manage and track
-											changes in codebase.
-										</li>
-										<li>
-											Optimized webpages for maximum speed and scalability.
+											Delivered 4+ production portals, increasing engagement{" "}
+											<strong>30%</strong> and onboarding{" "}
+											<strong>200+ manufacturer accounts</strong>.
 										</li>
 									</ul>
 								</Fade>
 							</div>
 							<div className="e-right">
-								<div className="org" ref={org1}></div>
-								<span className="time-span">July 2022 - Current</span>
+								<div className="org" ref={orgKK}></div>
+								<span className="time-span">Jul 2022 – Present</span>
 							</div>
 						</div>
 					</div>
-					{/* ---------------------------------------------------------------------------------------- */}
+					{/* GlobalLogic */}
 					<div className="card-body experience_body">
-						<h5>Software Engineer</h5>
+						<h5>GlobalLogic — Noida</h5>
+						<div className="role-progression">
+							<span className="role-title">Software Engineer</span>
+							<span className="role-dates">Oct 2019 – Jan 2022</span>
+						</div>
 						<hr />
 						<div className="experience_content">
 							<div className="e-left">
@@ -100,46 +105,35 @@ const Experience = () => {
 								<Fade left cascade>
 									<ul className="experienceDesc">
 										<li>
-											Adapted to different languages and technologies based on
-											project requirements.
+											Built 20+ reusable React components for a CSR dashboard,
+											standardising UI patterns and cutting feature build time{" "}
+											<strong>~25%</strong>.
 										</li>
 										<li>
-											Collaborated with team members to create system analysis
-											for applications based on client requirements.
+											Delivered 3+ prototypes and POCs, shortening stakeholder
+											feedback cycles from 2 weeks to under{" "}
+											<strong>4 days</strong>.
 										</li>
 										<li>
-											Developed software prototypes, enabling efficient testing
-											and feedback.
+											Modernised legacy VB6 modules with incremental React
+											refactors, eliminating <strong>~30%</strong> of recurring
+											production tickets with zero downtime.
 										</li>
 										<li>
-											Developed Web UI Components using ReactJS for Admin
-											Dashboard system, which provides all critical information
-											about CSR activities and their expenditure, and helps in
-											tracking and managing financial budgets.
-										</li>
-										<li>Prepared POCs in React, Node, and VB6.</li>
-										<li>
-											Worked on VB6 legacy code for Insurance Decision portal as
-											full-stack developer
+											Owned deliverable tracking for a 12-person squad, lifting
+											on-time release rate from ~70% to <strong>95%+</strong>.
 										</li>
 										<li>
-											Became point of contact for certain project deliverable
-											workflow activities.
-										</li>
-										<li>
-											Collaborated with DevOps team to identify and fix issues
-											in deployment of project.
-										</li>
-										<li>
-											Worked cross-functionally to address complex challenges in
-											product development.
+											Cleared CI/CD bottlenecks, cutting deployment time{" "}
+											<strong>~50%</strong> and shifting cadence from biweekly
+											to weekly.
 										</li>
 									</ul>
 								</Fade>
 							</div>
 							<div className="e-right">
-								<div className="org" ref={org}></div>
-								<span className="time-span">Oct 2019 - Jan 2022</span>
+								<div className="org" ref={orgGL}></div>
+								<span className="time-span">Oct 2019 – Jan 2022</span>
 							</div>
 						</div>
 					</div>

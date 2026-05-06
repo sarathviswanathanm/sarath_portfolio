@@ -29,7 +29,7 @@ const MoveToTop = () => {
 			title="Go To Top"
 			onClick={TopEvent}
 		>
-			<i className="far fa-hand-point-up" aria-hidden="true"></i>
+			<i className="fas fa-arrow-up" aria-hidden="true"></i>
 		</button>
 	);
 };

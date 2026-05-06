@@ -7,11 +7,20 @@ import {
 	FaHtml5,
 	FaCss3Alt,
 	FaReact,
-	FaNodeJs,
-	FaNpm,
-	FaDatabase,
 } from "react-icons/fa";
-import { SiTypescript, SiJavascript, SiFirebase } from "react-icons/si";
+import {
+	SiTypescript,
+	SiJavascript,
+	SiRedux,
+	SiThreedotjs,
+	SiChakraui,
+	SiTailwindcss,
+	SiVite,
+	SiStorybook,
+	SiGit,
+	SiJest,
+	SiCypress,
+} from "react-icons/si";
 
 const Stack = () => {
 	const { isDark } = useContext(StyleContext);
@@ -27,51 +36,20 @@ const Stack = () => {
 	}, []);
 
 	const stacks = [
-		{
-			skillName: "html-5",
-			fontAwesomeClassname: "fab fa-html5",
-			icon: <FaHtml5 color="#fca61f" />,
-		},
-		{
-			skillName: "css3",
-			fontAwesomeClassname: "fab fa-css3-alt",
-			icon: <FaCss3Alt color="#fca61f" />,
-		},
-		{
-			skillName: "TypeScript",
-			fontAwesomeClassname: "fab fa-ts",
-			icon: <SiTypescript color="#fca61f" />,
-		},
-		{
-			skillName: "JavaScript",
-			fontAwesomeClassname: "fab fa-js",
-			icon: <SiJavascript color="#fca61f" />,
-		},
-		{
-			skillName: "ReactJS",
-			fontAwesomeClassname: "fab fa-react",
-			icon: <FaReact color="#fca61f" />,
-		},
-		{
-			skillName: "nodejs",
-			fontAwesomeClassname: "fab fa-node",
-			icon: <FaNodeJs color="#fca61f" />,
-		},
-		{
-			skillName: "npm",
-			fontAwesomeClassname: "fab fa-npm",
-			icon: <FaNpm color="#fca61f" />,
-		},
-		{
-			skillName: "sql-database",
-			fontAwesomeClassname: "fas fa-database",
-			icon: <FaDatabase color="#fca61f" />,
-		},
-		{
-			skillName: "firebase",
-			fontAwesomeClassname: "fas fa-fire",
-			icon: <SiFirebase color="#fca61f" />,
-		},
+		{ skillName: "HTML5", icon: <FaHtml5 color="#fca61f" /> },
+		{ skillName: "CSS3", icon: <FaCss3Alt color="#fca61f" /> },
+		{ skillName: "TypeScript", icon: <SiTypescript color="#fca61f" /> },
+		{ skillName: "JavaScript", icon: <SiJavascript color="#fca61f" /> },
+		{ skillName: "React", icon: <FaReact color="#fca61f" /> },
+		{ skillName: "Redux Toolkit", icon: <SiRedux color="#fca61f" /> },
+		{ skillName: "Three.js", icon: <SiThreedotjs color="#fca61f" /> },
+		{ skillName: "Chakra UI", icon: <SiChakraui color="#fca61f" /> },
+		{ skillName: "Tailwind CSS", icon: <SiTailwindcss color="#fca61f" /> },
+		{ skillName: "Vite", icon: <SiVite color="#fca61f" /> },
+		{ skillName: "Storybook", icon: <SiStorybook color="#fca61f" /> },
+		{ skillName: "Git", icon: <SiGit color="#fca61f" /> },
+		{ skillName: "Jest", icon: <SiJest color="#fca61f" /> },
+		{ skillName: "Cypress", icon: <SiCypress color="#fca61f" /> },
 	];
 	return (
 		<Fade bottom duration={1000} distance="40px">
@@ -88,7 +66,6 @@ const Stack = () => {
 								return (
 									<li className="icon" key={item.skillName}>
 										{item.icon}
-										{/* <i className={`${item.fontAwesomeClassname}`}></i> */}
 										<p>{item.skillName}</p>
 									</li>
 								);
@@ -96,11 +73,21 @@ const Stack = () => {
 						</ul>
 						<ul className="stackDesc">
 							<li>
-								Developed Web application using React in JS,TS and SCSS/ChakraUI
+								Built production apps with React, TypeScript, Redux Toolkit,
+								and Chakra UI / Tailwind CSS
 							</li>
-							<li>Completed POC in NodeJS</li>
-							<li>Worked on SQL Database with .NET framework</li>
-							<li>Developed web application using RemixJs and ChakraUI</li>
+							<li>
+								Real-time 3D CAD rendering with Three.js in a manufacturing
+								costing engine
+							</li>
+							<li>
+								Developed and maintained company-wide design system with
+								Storybook and Vite
+							</li>
+							<li>
+								End-to-end testing with Cypress and Jest; REST API integration
+								with Axios and Frappe
+							</li>
 						</ul>
 					</Fade>
 				</div>

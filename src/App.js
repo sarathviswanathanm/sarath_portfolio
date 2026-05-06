@@ -28,7 +28,7 @@ const App = () => {
 		setLoading(true);
 		setTimeout(() => {
 			setLoading(false);
-		}, 3000);
+		}, 1200);
 		if (localStorage.getItem("isDark")) {
 			setIsDark(localStorage.getItem("isDark"));
 		}
