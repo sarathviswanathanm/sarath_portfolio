@@ -1,11 +1,14 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useContext } from "react";
 import Lottie from "lottie-web";
 import Fade from "react-reveal/Fade";
 import GL from "../../img/gl_logo.png";
 import Karkhana from "../../img/Karkhana Logo.png";
+import KarkhanaWhite from "../../img/Karkhana Logo White.png";
+import StyleContext from "../../Context/StyleContext";
 import "./Experience.css";
 
 const Experience = () => {
+	const { isDark } = useContext(StyleContext);
 	const orgGL = useRef(null);
 	const orgKK = useRef(null);
 	useEffect(() => {
@@ -40,7 +43,7 @@ const Experience = () => {
 						<div className="experience_content">
 							<div className="e-left">
 								<div className="company_logo_karkhana">
-									<img src={Karkhana} alt="Karkhana.io" />
+									<img src={isDark ? KarkhanaWhite : Karkhana} alt="Karkhana.io" />
 								</div>
 								<text className="company">Karkhana.io</text>
 							</div>

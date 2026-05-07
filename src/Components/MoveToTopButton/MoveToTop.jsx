@@ -1,4 +1,5 @@
 import React from "react";
+import { FiArrowUp } from "react-icons/fi";
 import "./MoveToTop.css";
 
 const MoveToTop = () => {
@@ -6,8 +7,8 @@ const MoveToTop = () => {
 		scrollFunction();
 	};
 	function TopEvent() {
-		document.body.scrollTop = 0; // For Safari
-		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
 	}
 	window.onscroll = function () {
 		scrollFunction();
@@ -24,12 +25,12 @@ const MoveToTop = () => {
 	}
 	return (
 		<button
-			className="movetotop button"
+			className="movetotop"
 			id="top"
 			title="Go To Top"
 			onClick={TopEvent}
 		>
-			<i className="fas fa-arrow-up" aria-hidden="true"></i>
+			<FiArrowUp />
 		</button>
 	);
 };

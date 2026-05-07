@@ -3,12 +3,21 @@
 	z-index: 1000;
 	visibility: hidden;
 	position: fixed;
-	right: 1rem;
-	padding: 10px;
-	height: 3.25rem;
-	width: 3.25rem;
-	border-radius: 50%;
-	font-size: 1.8rem;
-	padding: 5px;
-	margin: 0px auto;
+	right: 1.5rem;
+	background: transparent;
+	border: none;
+	padding: 0;
+	font-size: 2rem;
+	line-height: 1;
+	color: #fca61f;
+	filter: drop-shadow(0px 4px 8px rgba(251, 161, 40, 0.55));
+	cursor: pointer;
+	transition: transform 0.2s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#top:hover {
+	transform: scale(1.15);
 }

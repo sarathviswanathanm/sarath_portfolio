@@ -1,6 +1,150 @@
 const images = [
 	{
 		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_0911_FyRZsaqyN.jpg?updatedAt=1778153108136",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_0911_500x500_vGu0PpwNL1.jpg?updatedAt=1778152937846",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_0909_nm3VlJ1B-_.JPG?updatedAt=1778153169952",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_0909_500x500_mdeeVgD1z.JPG?updatedAt=1778152937248",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_1184_FO11h126i.JPG?updatedAt=1778153168673",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_1184_500x500_YNS9FDnO3f.JPG?updatedAt=1778152937889",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_0695_So6cSY7NY.JPG?updatedAt=1778153168329",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_0695_500x500_Hr1zuS3tH.JPG?updatedAt=1778152937430",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_1078_a1MJ9kS49.JPG?updatedAt=1778153165313",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_1078_500x500_4XwMNsz-_.JPG?updatedAt=1778152937553",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_3899%202_c5PIODeJE.JPG?updatedAt=1778153162852",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_3899%202_500x500_eyxaodo_YK.JPG?updatedAt=1778152938204",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_0898_ZGoRXvcFl.JPG?updatedAt=1778153150042",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_0898_500x500_qZdipgWe0f.JPG?updatedAt=1778152937741",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_0602%202_U6V7uHFxs.JPG?updatedAt=1778153149146",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_0602%202_500x500_1ovbwwLf5n.JPG?updatedAt=1778152937946",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_2600_exBJ8OlbB.JPG?updatedAt=1778153142648",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_2600_500x500__DUicYB0l.JPG?updatedAt=1778152937486",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_1098_-gkOuecy_.jpg?updatedAt=1778153138215",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_1098_500x500_ykEjanTnxZ.jpg?updatedAt=1778152937849",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_8580_fwpNFleB9O.JPG?updatedAt=1778153131200",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_8580_500x500_cg76Owspj_.JPG?updatedAt=1778152937714",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_0510_fpW6SmHbe.JPG?updatedAt=1778153130971",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_0510_500x500_OhAdp3gLL.JPG?updatedAt=1778152937114",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_3563_Nz3IAqQmYd.JPG?updatedAt=1778153120272",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_3563_500x500_0Yk8-CBEPl.JPG?updatedAt=1778152937917",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_3572_1ftbKYiJQ.JPG?updatedAt=1778153119110",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_3572_500x500_qF8v57MsdE.JPG?updatedAt=1778152937737",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_1685_d2aFyQQbn.JPG?updatedAt=1778153119177",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_1685_500x500_fUeadfDkD.JPG?updatedAt=1778152937514",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_2598_wk4bB-6cx.JPG?updatedAt=1778153112821",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_2598_500x500_OWt7GRovn.JPG?updatedAt=1778152937764",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_0684_wmqEttlTku.JPG?updatedAt=1778153109955",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_0684_500x500_GvOu53mt8.JPG?updatedAt=1778152937745",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_3898%202_7Y2cRPfWA.JPG?updatedAt=1778153098151",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_3898%202_500x500_iQYJF1rbi7.JPG?updatedAt=1778152938042",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_3889_hyFNgNxft.JPG?updatedAt=1778153089794",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_3889_500x500_ykU6VR7-Wg.JPG?updatedAt=1778152937890",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_8514%202_CPW6bzSYU.JPG?updatedAt=1778153086970",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_8514%202_500x500_wMvz61TKFI.JPG?updatedAt=1778152938016",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_0480%202_c3Eo91-L4.jpg?updatedAt=1778153080708",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_0480%202_500x500_ByTy91CPT.jpg?updatedAt=1778152937096",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_0512_w_59cxSF1.JPG?updatedAt=1778153080510",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_0512_500x500_Hb8uCjSL_.JPG?updatedAt=1778152937433",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_7896_0q8UW3jUz.JPG?updatedAt=1778153072182",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_7896_500x500_qP8Y6eg41z.JPG?updatedAt=1778152937873",
+	},
+	{
+		original:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_0896_eJv8iRF5qO.jpg?updatedAt=1778153063010",
+		thumbnail:
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_0896_500x500_PM219fXEN.jpg?updatedAt=1778152937928",
+	},
+	{
+		original:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_9286_1qcHTffeb.JPG?updatedAt=1703315156207",
 		thumbnail:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_9286_thumbnail_500x500_XORuXnNAZq.jpg?updatedAt=1703916471211",
@@ -13,13 +157,13 @@ const images = [
 	},
 	{
 		original:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_9316_r8-OaGP56u.heic?updatedAt=1703315155382",
+			"https://ik.imagekit.io/5yc2yhl2a/tr:f-jpg/portfolio/Shoot/IMG_9316_r8-OaGP56u.heic?updatedAt=1703315155382",
 		thumbnail:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_9316_thumbnail_500x500_YOhFFl7_l.jpg?updatedAt=1703917779183",
 	},
 	{
 		original:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_6698_Bzwwj0cUt.JPG?updatedAt=1703315154880",
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_6698_q3j7GmOUK.jpg",
 		thumbnail:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_6698_thumbnail_500x500_nLtZ7oIx5.jpg?updatedAt=1703916486365",
 	},
@@ -67,12 +211,6 @@ const images = [
 	},
 	{
 		original:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_6751_-5sznYC0cZ.JPG?updatedAt=1703315151683",
-		thumbnail:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_6751_thumbnail_500x500_vNxrtl-BLw.jpg?updatedAt=1703916481404",
-	},
-	{
-		original:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_6586_yFJK98NKqp.JPG?updatedAt=1703315151546",
 		thumbnail:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_6586_thumbnail_500x500_1ACCBi1CEW.jpg?updatedAt=1703916483735",
@@ -85,7 +223,7 @@ const images = [
 	},
 	{
 		original:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_9028__B4ozH0mB.heic?updatedAt=1703315150839",
+			"https://ik.imagekit.io/5yc2yhl2a/tr:f-jpg/portfolio/Shoot/IMG_9028__B4ozH0mB.heic?updatedAt=1703315150839",
 		thumbnail:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_9028_thumbnail_500x500_A9viHlFnKS.jpg?updatedAt=1703918632416",
 	},
@@ -136,12 +274,6 @@ const images = [
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_6222_w_Qf0ciBC.JPG?updatedAt=1703315137955",
 		thumbnail:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_6222_thumbnail_500x500_LbN0uoaXX.jpg?updatedAt=1703916483630",
-	},
-	{
-		original:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_5627_j-EfOQLHuO.JPG?updatedAt=1703315137776",
-		thumbnail:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_5627_thumbnail_500x500_wC6MkOXHYy.jpg?updatedAt=1703916490167",
 	},
 	{
 		original:
@@ -199,12 +331,6 @@ const images = [
 	},
 	{
 		original:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_5626_ILcXbF2L9.JPG?updatedAt=1703315130872",
-		thumbnail:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_5626_thumbnail_500x500_7ENXKWtHyF.jpg?updatedAt=1703916477898",
-	},
-	{
-		original:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_4502_yoPncSbSl.JPG?updatedAt=1703315129388",
 		thumbnail:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_4502_thumbnail_500x500_5d2wIk1i4D.jpg?updatedAt=1703916478093",
@@ -223,13 +349,13 @@ const images = [
 	},
 	{
 		original:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_5350_QcJdgmolp.HEIC?updatedAt=1703315127247",
+			"https://ik.imagekit.io/5yc2yhl2a/tr:f-jpg/portfolio/Shoot/IMG_5350_QcJdgmolp.HEIC?updatedAt=1703315127247",
 		thumbnail:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_5350_thumbnail_500x500_0AxFNk5mB.jpg?updatedAt=1703921450919",
 	},
 	{
 		original:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_4899_0q7z631Q_.heic?updatedAt=1703315125484",
+			"https://ik.imagekit.io/5yc2yhl2a/tr:f-jpg/portfolio/Shoot/IMG_4899_0q7z631Q_.heic?updatedAt=1703315125484",
 		thumbnail:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_4899_thumbnail_500x500_uecuvfNuhE.jpg?updatedAt=1703916464371",
 	},
@@ -241,13 +367,13 @@ const images = [
 	},
 	{
 		original:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_5035_HQcdG7pK_.heic?updatedAt=1703315124843",
+			"https://ik.imagekit.io/5yc2yhl2a/tr:f-jpg/portfolio/Shoot/IMG_5035_HQcdG7pK_.heic?updatedAt=1703315124843",
 		thumbnail:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_5035_thumbnail_500x500_oinpZnkA6O.jpg?updatedAt=1703916466996",
 	},
 	{
 		original:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_4983_Cn1VSEdfA.heic?updatedAt=1703315124810",
+			"https://ik.imagekit.io/5yc2yhl2a/tr:f-jpg/portfolio/Shoot/IMG_4983_Cn1VSEdfA.heic?updatedAt=1703315124810",
 		thumbnail:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_4983_thumbnail_500x500_jtwOHGNtj.jpg?updatedAt=1703916487681",
 	},
@@ -265,7 +391,7 @@ const images = [
 	},
 	{
 		original:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_4360_L_d7KXafV.JPG?updatedAt=1703315121979",
+			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_4360_u87SN6BMr.JPG",
 		thumbnail:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_4360_thumbnail_500x500_BqYMBvt2fm.jpg?updatedAt=1703916487645",
 	},
@@ -293,7 +419,6 @@ const images = [
 		thumbnail:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_4362_thumbnail_500x500_S0RqJ7P9sv.jpg?updatedAt=1703916489732",
 	},
-
 	{
 		original:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_3873_yvjCj5P3n.JPG?updatedAt=1703315119405",
@@ -342,12 +467,6 @@ const images = [
 		thumbnail:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_3205_thumbnail_500x500_WrBmKqFY-.jpg?updatedAt=1703916472569",
 	},
-	// {
-	// 	original:
-	// 		"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_2673__wPX4J27I.JPG?updatedAt=1703315114054",
-	// 	thumbnail:
-	// 		"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_2673__wPX4J27I.JPG?updatedAt=1703315114054",
-	// },
 	{
 		original:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_2567_EzRGR-uv7n.JPG?updatedAt=1703315113668",
@@ -362,28 +481,10 @@ const images = [
 	},
 	{
 		original:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_2586_otOGfPVIOa.JPG?updatedAt=1703315113259",
-		thumbnail:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_2586_thumbnail_500x500__be2Bge0_b.jpg?updatedAt=1703916483454",
-	},
-	// {
-	// 	original:
-	// 		"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_1544_oRxyXlBCJg.JPG?updatedAt=1703315113103",
-	// 	thumbnail:
-	// 		"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_1544_oRxyXlBCJg.JPG?updatedAt=1703315113103",
-	// },
-	{
-		original:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_2688_5loHgO-Tj4.JPG?updatedAt=1703315112970",
 		thumbnail:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_2688_thumbnail_500x500_krBdjGCiit.jpg?updatedAt=1703916483886",
 	},
-	// {
-	// 	original:
-	// 		"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_2552_brxQiDSw8.JPG?updatedAt=1703315112566",
-	// 	thumbnail:
-	// 		"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_2552_brxQiDSw8.JPG?updatedAt=1703315112566",
-	// },
 	{
 		original:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_2406_g-9oIQMit.JPG?updatedAt=1703315112288",
@@ -395,24 +496,6 @@ const images = [
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_1593_GU1YT49RwD.jpg?updatedAt=1703315111432",
 		thumbnail:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_1593_thumbnail_500x500_PywrrDZjA.jpg?updatedAt=1703916483771",
-	},
-	// {
-	// 	original:
-	// 		"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_1534_--BOIZEbUA.JPG?updatedAt=1703315110700",
-	// 	thumbnail:
-	// 		"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_1534_--BOIZEbUA.JPG?updatedAt=1703315110700",
-	// },
-	// {
-	// 	original:
-	// 		"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_2394_OVpxoPOh1.jpg?updatedAt=1703315110305",
-	// 	thumbnail:
-	// 		"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_2394_OVpxoPOh1.jpg?updatedAt=1703315110305",
-	// },
-	{
-		original:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_1494_oGyiWOnU1.JPG?updatedAt=1703315109987",
-		thumbnail:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_1494_thumbnail_500x500_ltck-_h-Hi.jpg?updatedAt=1703916490168",
 	},
 	{
 		original:
@@ -474,12 +557,6 @@ const images = [
 		thumbnail:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/20210731_183431_thumbnail_500x500_tSpLg4wLPI.jpg?updatedAt=1703916464553",
 	},
-	// {
-	// 	original:
-	// 		"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_0547_cUZeFpDOly.JPG?updatedAt=1703315104635",
-	// 	thumbnail:
-	// 		"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_0547_cUZeFpDOly.JPG?updatedAt=1703315104635",
-	// },
 	{
 		original:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_1170_fMogctp5IV.JPG?updatedAt=1703315104308",
@@ -512,27 +589,15 @@ const images = [
 	},
 	{
 		original:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/20200904162726_IMG_2670-01_x34SFACom7.jpg?updatedAt=1703315100509",
-		thumbnail:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/20200904162726_IMG_2670-01_thumbnail_500x500_rFj5J4LOIL.jpg?updatedAt=1703916483852",
-	},
-	{
-		original:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_0031_I_1SRLoGiS.heic?updatedAt=1703315099930",
+			"https://ik.imagekit.io/5yc2yhl2a/tr:f-jpg/portfolio/Shoot/IMG_0031_I_1SRLoGiS.heic?updatedAt=1703315099930",
 		thumbnail:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_0031_thumbnail_500x500_HZks3BJfe3.jpg?updatedAt=1703916478096",
 	},
 	{
 		original:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/IMG_0241_Y7HbAmicnx.HEIC?updatedAt=1703315099289",
+			"https://ik.imagekit.io/5yc2yhl2a/tr:f-jpg/portfolio/Shoot/IMG_0241_Y7HbAmicnx.HEIC?updatedAt=1703315099289",
 		thumbnail:
 			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/IMG_0241_thumbnail_500x500_UU8lkf65RT.jpg?updatedAt=1703916483261",
-	},
-	{
-		original:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/20191026_115543~2_AmpAIe4aa.jpg?updatedAt=1703315098629",
-		thumbnail:
-			"https://ik.imagekit.io/5yc2yhl2a/portfolio/Shoot/Thumbnails/20191026_115543~2_thumbnail_500x500__qgkncG1bI.jpg?updatedAt=1703916471231",
 	},
 	{
 		original:

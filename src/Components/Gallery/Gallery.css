@@ -2,37 +2,99 @@
 	margin-top: 7rem;
 	padding: 1rem 1.5rem;
 }
-.mySwiper {
-	margin-top: 3.5rem;
-}
-.swiper-slide {
-	background-position: center;
-	background-size: cover;
-	width: 300px;
-	height: 400px;
+
+.gallery-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1.5rem;
 }
 
-.swiper-slide img {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+.gallery-header h3 {
+	margin: 0;
+}
+
+.gallery-view-toggle {
+	display: flex;
+	gap: 4px;
+	background: rgba(120, 128, 151, 0.15);
+	border-radius: 10px;
+	padding: 4px;
+}
+
+.view-toggle-btn {
+	background: transparent;
+	border: none;
 	cursor: pointer;
+	padding: 7px 10px;
+	border-radius: 7px;
+	font-size: 1.1rem;
+	color: var(--gray);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.2s ease;
 }
 
-.modalImage {
+.view-toggle-btn.active {
+	background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+	color: white;
+	box-shadow: 0px 3px 6px rgba(251, 161, 40, 0.35);
+}
+
+.view-toggle-btn:hover:not(.active) {
+	color: var(--orange);
+}
+
+/* ── Masonry grid ── */
+.gallery-grid {
+	columns: 4;
+	column-gap: 10px;
+	margin-top: 0.5rem;
+}
+
+.gallery-grid-item {
+	break-inside: avoid;
+	margin-bottom: 10px;
+	cursor: pointer;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.gallery-grid-item img {
 	width: 100%;
-	height: 100%;
-	object-fit: contain;
+	height: auto;
+	display: block;
+	border-radius: 8px;
+	transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
+.gallery-grid-item:hover img {
+	transform: scale(1.03);
+	opacity: 0.88;
+}
+
+/* ── Slider ── */
 .my-custom-gallery .image-gallery-image {
 	max-height: 40vh;
 	object-fit: cover;
 }
+
+/* ── Responsive ── */
+@media screen and (max-width: 1024px) {
+	.gallery-grid {
+		columns: 3;
+	}
+}
+
 @media screen and (max-width: 768px) {
-	.swiper-slide {
-		width: 250px;
-		height: auto;
+	.gallery-grid {
+		columns: 2;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.gallery-grid {
+		columns: 1;
 	}
 }

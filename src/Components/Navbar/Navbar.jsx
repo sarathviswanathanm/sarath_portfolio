@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Avatar from "@mui/material/Avatar";
 import Headroom from "react-headroom";
 import SarathIcon from "../../img/SarathIcon.jpg";
@@ -18,6 +18,10 @@ const pages = [
 
 const Navbar = () => {
 	const { isDark } = useContext(StyleContext);
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+	const closeMenu = () => setIsMenuOpen(false);
+
 	return (
 		<Headroom>
 			<nav
@@ -29,59 +33,41 @@ const Navbar = () => {
 					<a
 						className="navbar-brand"
 						href="#home"
-						style={{
-							display: "flex",
-							alignItems: "center",
-							justifyContent: "center",
-						}}
+						style={{ display: "flex", alignItems: "center" }}
 					>
-						<Avatar
-							src={SarathIcon}
-							alt="logo"
-							sx={{
-								mr: 1.5,
-							}}
-						/>
-						<span
-							className={`sarath ${
-								isDark ? "lightColorText" : "darkColorText"
-							}`}
-						>
+						<Avatar src={SarathIcon} alt="logo" sx={{ mr: 1.5 }} />
+						<span className={`sarath ${isDark ? "lightColorText" : "darkColorText"}`}>
 							Sarath
 						</span>
 					</a>
+
 					<button
 						className="navbar-toggler"
 						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent"
-						aria-expanded="false"
 						aria-label="Toggle navigation"
 						style={{ border: "none" }}
+						onClick={() => setIsMenuOpen((prev) => !prev)}
 					>
-						<label htmlFor="checkbox" className="hamburger">
-							<input type="checkbox" id="checkbox" />
-							<span className="line line-main"></span>
-							<span className="line line-split"></span>
+						<label className="hamburger">
+							<span className={`line line-main ${isMenuOpen ? "open" : ""}`}></span>
+							<span className={`line line-split ${isMenuOpen ? "open" : ""}`}></span>
 						</label>
 					</button>
 
-					<div className="collapse navbar-collapse" id="navbarSupportedContent">
+					<div
+						className={`navbar-collapse ${isMenuOpen ? "menu-open" : "menu-closed"}`}
+						id="navbarSupportedContent"
+					>
 						<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 							{pages.map((page) => (
-								<li className="nav-item" key={page}>
+								<li className="nav-item" key={page.name}>
 									<a
 										className={`menuItem nav-link ${
 											isDark ? "lightColorText" : "darkColorText"
 										}`}
-										aria-current="page"
 										href={page.href}
-										style={{
-											fontFamily: "monospace",
-											fontSize: "1.2rem",
-											padding: "0px, 5px",
-										}}
+										onClick={closeMenu}
+										style={{ fontFamily: "monospace", fontSize: "1.2rem" }}
 									>
 										{page.name}
 									</a>

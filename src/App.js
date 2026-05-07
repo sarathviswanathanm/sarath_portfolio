@@ -1,7 +1,6 @@
 import React, { useState, useEffect, Suspense } from "react";
-import { FiSettings } from "react-icons/fi";
+import { FiSun, FiMoon } from "react-icons/fi";
 import Tooltip from "@mui/material/Tooltip";
-import { MdOutlineCancel } from "react-icons/md";
 
 import Loader from "./Components/Loader/Loader";
 import Navbar from "./Components/Navbar/Navbar";
@@ -18,19 +17,21 @@ import Gallery from "./Components/Gallery/Gallery";
 import Footer from "./Components/Footer/Footer";
 
 const App = () => {
-	const [isDark, setIsDark] = useState(false);
+	const [isDark, setIsDark] = useState(true);
 	const [loading, setLoading] = useState(false);
 	const changeTheme = () => {
-		setIsDark(!isDark);
-		localStorage.setItem("isDark", isDark);
+		const next = !isDark;
+		setIsDark(next);
+		localStorage.setItem("isDark", String(next));
 	};
 	useEffect(() => {
 		setLoading(true);
 		setTimeout(() => {
 			setLoading(false);
 		}, 1200);
-		if (localStorage.getItem("isDark")) {
-			setIsDark(localStorage.getItem("isDark"));
+		const stored = localStorage.getItem("isDark");
+		if (stored !== null) {
+			setIsDark(stored === "true");
 		}
 	}, []);
 	return (
@@ -41,84 +42,16 @@ const App = () => {
 				<StyleProvider value={{ isDark: isDark, changeTheme: changeTheme }}>
 					<div className={isDark ? "dark-mode App" : "App"}>
 						<div className="settings">
-							<Tooltip title="Change theme">
+							<Tooltip title={isDark ? "Switch to light mode" : "Switch to dark mode"}>
 								<button
-									data-bs-toggle="offcanvas"
-									data-bs-target="#offcanvasRight"
-									aria-controls="offcanvasRight"
 									type="button"
 									className="button settingsButton"
+									onClick={changeTheme}
+									aria-label="Toggle theme"
 								>
-									<FiSettings fontSize="2rem" />
+									{isDark ? <FiSun fontSize="1.4rem" /> : <FiMoon fontSize="1.4rem" />}
 								</button>
 							</Tooltip>
-						</div>
-						<div
-							className={`offcanvas offcanvas-end ${
-								isDark ? "lightColorText" : "darkColorText"
-							}`}
-							tabIndex="-1"
-							id="offcanvasRight"
-							aria-labelledby="offcanvasRightLabel"
-							style={{
-								backgroundColor: isDark ? "var(--darkBackgroundSecondary)" : "",
-							}}
-						>
-							<div className="offcanvas-header">
-								<h2 id="offcanvasRightLabel">Settings</h2>
-								<button
-									type="button"
-									className="text-reset"
-									data-bs-dismiss="offcanvas"
-									aria-label="Close"
-									style={{
-										borderRadius: "50%",
-										border: "none",
-										backgroundColor: "transparent",
-									}}
-								>
-									<MdOutlineCancel fontSize="2rem" color="var(--orange)" />
-								</button>
-							</div>
-							<hr />
-							<div className="offcanvas-body">
-								<h3 className="themeHeading">Theme Options</h3>
-								<div className="mt-4">
-									<input
-										type="radio"
-										id="light"
-										name="theme"
-										value="Light"
-										className="cursor-pointer"
-										data-bs-dismiss="offcanvas"
-										onChange={() => {
-											changeTheme();
-										}}
-										checked={!isDark}
-									/>
-									<label htmlFor="light" className="themeName">
-										Light
-									</label>
-								</div>
-
-								<div className="mt-4">
-									<input
-										type="radio"
-										id="dark"
-										name="theme"
-										value="Dark"
-										className="cursor-pointer"
-										data-bs-dismiss="offcanvas"
-										onChange={() => {
-											changeTheme();
-										}}
-										checked={isDark}
-									/>
-									<label htmlFor="dark" className="themeName">
-										Dark
-									</label>
-								</div>
-							</div>
 						</div>
 						<Navbar />
 						<Intro />
