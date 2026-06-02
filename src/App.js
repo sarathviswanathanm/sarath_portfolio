@@ -1,6 +1,7 @@
 import React, { useState, useEffect, Suspense } from "react";
 import { FiSun, FiMoon } from "react-icons/fi";
 import Tooltip from "@mui/material/Tooltip";
+import { initGA, trackEvent } from "./analytics";
 
 import Loader from "./Components/Loader/Loader";
 import Navbar from "./Components/Navbar/Navbar";
@@ -23,8 +24,10 @@ const App = () => {
 		const next = !isDark;
 		setIsDark(next);
 		localStorage.setItem("isDark", String(next));
+		trackEvent("UI", "theme_toggle", next ? "dark" : "light");
 	};
 	useEffect(() => {
+		initGA();
 		setLoading(true);
 		setTimeout(() => {
 			setLoading(false);

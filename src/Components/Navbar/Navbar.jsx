@@ -3,6 +3,7 @@ import Avatar from "@mui/material/Avatar";
 import Headroom from "react-headroom";
 import SarathIcon from "../../img/SarathIcon.jpg";
 import "./Navbar.css";
+import { trackEvent } from "../../analytics";
 
 import StyleContext from "../../Context/StyleContext";
 
@@ -66,7 +67,10 @@ const Navbar = () => {
 											isDark ? "lightColorText" : "darkColorText"
 										}`}
 										href={page.href}
-										onClick={closeMenu}
+										onClick={() => {
+											trackEvent("Navigation", "section_click", page.name);
+											closeMenu();
+										}}
 										style={{ fontFamily: "monospace", fontSize: "1.2rem" }}
 									>
 										{page.name}

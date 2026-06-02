@@ -5,6 +5,7 @@ import StyleContext from "../../Context/StyleContext";
 import Fade from "react-reveal/Fade";
 import resumePdf from "../../Sarath_Viswanathan_M.pdf";
 import InteractiveBackground from "./InteractiveBackground";
+import { trackEvent } from "../../analytics";
 
 import "./Intro.css";
 
@@ -47,13 +48,19 @@ const Intro = () => {
 				<div className="buttons">
 					<button
 						className="button i-button"
-						onClick={() => window.open(resumePdf)}
+						onClick={() => {
+							trackEvent("Engagement", "resume_download", "CV PDF");
+							window.open(resumePdf);
+						}}
 					>
 						See Resume
 					</button>
 					<button
 						className="button i-button"
-						onClick={() => window.scrollTo(0, 100000)}
+						onClick={() => {
+							trackEvent("Engagement", "contact_click", "Contact Me button");
+							window.scrollTo(0, 100000);
+						}}
 					>
 						Contact Me
 					</button>
@@ -64,6 +71,7 @@ const Intro = () => {
 						href="https://www.linkedin.com/in/sarath-viswanathan-m-371517141/"
 						target="_blank"
 						rel="noreferrer"
+						onClick={() => trackEvent("Engagement", "social_click", "LinkedIn")}
 					>
 						<img src={linkedIn} alt="LinkedIn" />
 					</a>
@@ -71,6 +79,7 @@ const Intro = () => {
 						href="https://www.instagram.com/sarath_mv/?hl=en"
 						target="_blank"
 						rel="noreferrer"
+						onClick={() => trackEvent("Engagement", "social_click", "Instagram")}
 					>
 						<img src={instagram} alt="Instagram" />
 					</a>

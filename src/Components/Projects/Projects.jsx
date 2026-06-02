@@ -4,6 +4,7 @@ import adminDashBoard from "../../img/projects/AdminDashBoard.png";
 import amazon from "../../img/projects/AmazonClone.png";
 import portfolio from "../../img/projects/Portfolio.png";
 import Fade from "react-reveal/Fade";
+import { trackEvent } from "../../analytics";
 
 import "./Projects.css";
 
@@ -47,7 +48,10 @@ const Projects = () => {
 							<div
 								className={`card customCard ${!project.site ? "no-link" : ""}`}
 								onClick={() => {
-									if (project.site) window.open(project.site);
+									if (project.site) {
+										trackEvent("Engagement", "project_click", project.title);
+										window.open(project.site);
+									}
 								}}
 							>
 								<img src={project.image} alt="" />
