@@ -27,7 +27,7 @@ const projects = [
 		image: amazon,
 		description:
 			"Clone of Amazon India website with home page, products list page, product detail page, and cart items page. SignUp/SignIn functionality also included. ",
-		site: "https://clone-174b0.web.app/",
+		site: null,
 	},
 	{
 		title: "Personal Portfolio",
@@ -45,9 +45,9 @@ const Projects = () => {
 					{projects.map((project) => (
 						<Fade left key={project.title}>
 							<div
-								className="card customCard"
+								className={`card customCard ${!project.site ? "no-link" : ""}`}
 								onClick={() => {
-									window.open(project.site);
+									if (project.site) window.open(project.site);
 								}}
 							>
 								<img src={project.image} alt="" />
