@@ -35,7 +35,7 @@ const Experience = () => {
 								Senior Full Stack Developer (Frontend-Focused)
 								<span className="role-badge">Promoted</span>
 							</span>
-							<span className="role-dates">Apr 2025 – Present</span>
+							<span className="role-dates">Apr 2025 – Jun 2026</span>
 							<span className="role-title">Frontend Software Developer</span>
 							<span className="role-dates">Jul 2022 – Mar 2025</span>
 						</div>
@@ -85,7 +85,7 @@ const Experience = () => {
 							</div>
 							<div className="e-right">
 								<div className="org" ref={orgKK}></div>
-								<span className="time-span">Jul 2022 – Present</span>
+								<span className="time-span">Jul 2022 – Jun 2026</span>
 							</div>
 						</div>
 					</div>

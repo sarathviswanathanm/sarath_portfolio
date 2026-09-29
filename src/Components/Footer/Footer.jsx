@@ -23,6 +23,11 @@ const Footer = () => {
 					</a>
 				</div>
 				<div className="phone">
+					<a className="contact_detail" href="tel:+971563495065">
+						<CallIcon style={{ marginRight: "5px" }} /> +971 0563495065
+					</a>
+				</div>
+				<div className="phone">
 					<a className="contact_detail" href={"tel:" + 9526335398}>
 						<CallIcon style={{ marginRight: "5px" }} /> 9526335398
 					</a>

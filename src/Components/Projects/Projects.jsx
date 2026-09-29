@@ -1,8 +1,9 @@
 import React from "react";
-import weather from "../../img/projects/Weather.png";
+// import weather from "../../img/projects/Weather.png";
+import costingEngine from "../../img/projects/AutomatedCostingEngine.png";
 import adminDashBoard from "../../img/projects/AdminDashBoard.png";
-import amazon from "../../img/projects/AmazonClone.png";
-import portfolio from "../../img/projects/Portfolio.png";
+// import amazon from "../../img/projects/AmazonClone.png";
+// import portfolio from "../../img/projects/Portfolio.png";
 import Fade from "react-reveal/Fade";
 import { trackEvent } from "../../analytics";
 
@@ -10,12 +11,21 @@ import "./Projects.css";
 
 const projects = [
 	{
+		title: "Automated Costing Engine",
+		image: costingEngine,
+		description:
+			"Manufacturing costing platform with interactive 3D CAD visualisation, automated cost estimates, and detailed cost breakdowns. Built with React, TypeScript, and Three.js.",
+		site: "https://app.dashnode.ai",
+	},
+	/*
+	{
 		title: "Weather Application",
 		image: weather,
 		description:
 			"Live search of city's current weather with daily and hourly forecast",
 		site: "https://weather-openweathermap-20283.web.app/",
 	},
+	*/
 	{
 		title: "Admin Dashboard",
 		image: adminDashBoard,
@@ -23,6 +33,7 @@ const projects = [
 			"Admin dashboard with various charts for data representations, data tables, apps like Calendar schedule, Kanban board, WYSIWYG Editor, and Colour Picker.",
 		site: "https://admin-dashboard-65ccf.web.app/",
 	},
+	/*
 	{
 		title: "Amazon Clone",
 		image: amazon,
@@ -30,18 +41,21 @@ const projects = [
 			"Clone of Amazon India website with home page, products list page, product detail page, and cart items page. SignUp/SignIn functionality also included. ",
 		site: null,
 	},
+	*/
+	/*
 	{
 		title: "Personal Portfolio",
 		image: portfolio,
 		description: "My own portfolio created using ReactJS",
-		site: "https://sarath-viswanathan-m.web.app/",
+		site: "https://sarath-mv.web.app/",
 	},
+	*/
 ];
 const Projects = () => {
 	return (
 		<Fade bottom duration={1000} distance="40px">
 			<div className="projects" id="projects">
-				<h3>Personal Projects</h3>
+				<h3>Selected Projects</h3>
 				<div className="project">
 					{projects.map((project) => (
 						<Fade left key={project.title}>

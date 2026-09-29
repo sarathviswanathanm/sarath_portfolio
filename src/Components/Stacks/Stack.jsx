@@ -7,6 +7,7 @@ import {
 	FaHtml5,
 	FaCss3Alt,
 	FaReact,
+	FaCode,
 } from "react-icons/fa";
 import {
 	SiTypescript,
@@ -18,8 +19,13 @@ import {
 	SiVite,
 	SiStorybook,
 	SiGit,
-	SiJest,
 	SiCypress,
+	SiReactrouter,
+	SiMicrosoft,
+	SiMicrosoftteams,
+	SiWebpack,
+	SiGithub,
+
 } from "react-icons/si";
 
 const Stack = () => {
@@ -48,8 +54,15 @@ const Stack = () => {
 		{ skillName: "Vite", icon: <SiVite color="#fca61f" /> },
 		{ skillName: "Storybook", icon: <SiStorybook color="#fca61f" /> },
 		{ skillName: "Git", icon: <SiGit color="#fca61f" /> },
-		{ skillName: "Jest", icon: <SiJest color="#fca61f" /> },
 		{ skillName: "Cypress", icon: <SiCypress color="#fca61f" /> },
+		{ skillName: "React Context API", icon: <FaReact color="#fca61f" /> },
+		{ skillName: "RemixJS", icon: <FaReact color="#fca61f" /> },
+		{ skillName: "React Router", icon: <SiReactrouter color="#fca61f" /> },
+		{ skillName: "Fluent UI", icon: <SiMicrosoft color="#fca61f" /> },
+		{ skillName: "TeamsJS", icon: <SiMicrosoftteams color="#fca61f" /> },
+		{ skillName: "Axios", icon: <FaCode color="#fca61f" /> },
+		{ skillName: "Webpack", icon: <SiWebpack color="#fca61f" /> },
+		{ skillName: "GitHub", icon: <SiGithub color="#fca61f" /> },
 	];
 	return (
 		<Fade bottom duration={1000} distance="40px">
@@ -85,8 +98,18 @@ const Stack = () => {
 								Storybook and Vite
 							</li>
 							<li>
-								End-to-end testing with Cypress and Jest; REST API integration
+								Testing with Cypress, Jest, and React Testing Library; REST API integration
 								with Axios and Frappe
+							</li>
+							<li>
+								Frontend and component architecture, design systems, Core Web
+								Vitals, code splitting, lazy loading, and Progressive Web Apps
+							</li>
+							<li>
+								Microsoft Teams Tab Apps with the Teams JavaScript SDK and Fluent UI
+							</li>
+							<li>
+								CI/CD pipelines, Agile, SAFe 5, and clean coding practices
 							</li>
 						</ul>
 					</Fade>
