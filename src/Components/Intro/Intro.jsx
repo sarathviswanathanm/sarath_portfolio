@@ -1,6 +1,8 @@
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { whatsappUrl } from "../../contact";
 import React, { useRef, useContext } from "react";
 import linkedIn from "../../img/linkedin.png";
-import instagram from "../../img/instagram.png";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import StyleContext from "../../Context/StyleContext";
 import Fade from "react-reveal/Fade";
 import resumePdf from "../../Sarath_Viswanathan_M.pdf";
@@ -8,6 +10,8 @@ import InteractiveBackground from "./InteractiveBackground";
 import { trackEvent } from "../../analytics";
 
 import "./Intro.css";
+
+const emailUrl = `mailto:sarathviswanathanm@gmail.com?subject=${encodeURIComponent("Let’s connect — Portfolio enquiry")}&body=${encodeURIComponent("Hi Sarath,\n\nI came across your portfolio and would like to connect.\n\nBest regards,")}`;
 
 const Intro = () => {
 	const { isDark } = useContext(StyleContext);
@@ -76,12 +80,20 @@ const Intro = () => {
 						<img src={linkedIn} alt="LinkedIn" />
 					</a>
 					<a
-						href="https://www.instagram.com/sarath_mv/?hl=en"
-						target="_blank"
-						rel="noreferrer"
-						onClick={() => trackEvent("Engagement", "social_click", "Instagram")}
+						href={emailUrl}
+						aria-label="Email Sarath"
+						onClick={() => trackEvent("Engagement", "social_click", "Email")}
 					>
-						<img src={instagram} alt="Instagram" />
+						<EmailOutlinedIcon sx={{ fontSize: "90px", color: "#fca61f" }} />
+					</a>
+					<a
+						href={whatsappUrl}
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="Chat with Sarath on WhatsApp"
+						onClick={() => trackEvent("Engagement", "social_click", "WhatsApp")}
+					>
+						<WhatsAppIcon sx={{ fontSize: "90px", color: "#fca61f" }} />
 					</a>
 				</div>
 			</div>

@@ -1,3 +1,5 @@
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { whatsappUrl } from "../../contact";
 import React from "react";
 import EmailIcon from "@mui/icons-material/Email";
 import CallIcon from "@mui/icons-material/Call";
@@ -28,8 +30,8 @@ const Footer = () => {
 					</a>
 				</div>
 				<div className="phone">
-					<a className="contact_detail" href={"tel:" + 9526335398}>
-						<CallIcon style={{ marginRight: "5px" }} /> 9526335398
+					<a className="contact_detail" href="tel:+919526335398">
+						<CallIcon style={{ marginRight: "5px" }} /> +91 9526335398
 					</a>
 				</div>
 				<div className="socialMedia">
@@ -40,6 +42,14 @@ const Footer = () => {
 							rel="noreferrer"
 						>
 							<LinkedInIcon sx={{ fontSize: "3rem" }} />
+						</a>
+						<a
+							href={whatsappUrl}
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="Chat with Sarath on WhatsApp"
+						>
+							<WhatsAppIcon sx={{ fontSize: "3rem" }} />
 						</a>
 						<a
 							href="https://www.instagram.com/sarath_mv/?hl=en"

@@ -3,11 +3,15 @@ import Lottie from "lottie-web";
 import StyleContext from "../../Context/StyleContext";
 import Fade from "react-reveal/Fade";
 import "./Stack.css";
+import { ReactComponent as ClaudeCodeIcon } from "../../img/stacks/claudecode.svg";
+import { ReactComponent as CodexIcon } from "../../img/stacks/codex.svg";
+import { ReactComponent as CursorIcon } from "../../img/stacks/cursor.svg";
 import {
 	FaHtml5,
 	FaCss3Alt,
 	FaReact,
 	FaCode,
+	FaNetworkWired,
 } from "react-icons/fa";
 import {
 	SiTypescript,
@@ -25,7 +29,9 @@ import {
 	SiMicrosoftteams,
 	SiWebpack,
 	SiGithub,
-
+	SiSentry,
+	SiDatadog,
+	SiGoogleanalytics,
 } from "react-icons/si";
 
 const Stack = () => {
@@ -63,6 +69,13 @@ const Stack = () => {
 		{ skillName: "Axios", icon: <FaCode color="#fca61f" /> },
 		{ skillName: "Webpack", icon: <SiWebpack color="#fca61f" /> },
 		{ skillName: "GitHub", icon: <SiGithub color="#fca61f" /> },
+		{ skillName: "WebSockets", icon: <FaNetworkWired color="#fca61f" /> },
+		{ skillName: "Sentry", icon: <SiSentry color="#fca61f" /> },
+		{ skillName: "Datadog RUM", icon: <SiDatadog color="#fca61f" /> },
+		{ skillName: "Google Analytics", icon: <SiGoogleanalytics color="#fca61f" /> },
+		{ skillName: "Claude Code", icon: <ClaudeCodeIcon color="#fca61f" aria-hidden="true" /> },
+		{ skillName: "Codex", icon: <CodexIcon color="#fca61f" aria-hidden="true" /> },
+		{ skillName: "Cursor", icon: <CursorIcon color="#fca61f" aria-hidden="true" /> },
 	];
 	return (
 		<Fade bottom duration={1000} distance="40px">
@@ -110,6 +123,10 @@ const Stack = () => {
 							</li>
 							<li>
 								CI/CD pipelines, Agile, SAFe 5, and clean coding practices
+							</li>
+							<li>
+								AI-assisted development with Cursor, Claude Code, and Codex for
+								code analysis, architecture planning, and debugging
 							</li>
 						</ul>
 					</Fade>
