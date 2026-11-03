@@ -1,6 +1,8 @@
 import React, { useContext, useState } from "react";
 import Avatar from "@mui/material/Avatar";
+import Tooltip from "@mui/material/Tooltip";
 import Headroom from "react-headroom";
+import { FiMoon, FiSun } from "react-icons/fi";
 import SarathIcon from "../../img/SarathIcon.jpg";
 import "./Navbar.css";
 import { trackEvent } from "../../analytics";
@@ -18,7 +20,7 @@ const pages = [
 ];
 
 const Navbar = () => {
-	const { isDark } = useContext(StyleContext);
+	const { isDark, changeTheme } = useContext(StyleContext);
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	const closeMenu = () => setIsMenuOpen(false);
@@ -41,19 +43,6 @@ const Navbar = () => {
 							Sarath
 						</span>
 					</a>
-
-					<button
-						className="navbar-toggler"
-						type="button"
-						aria-label="Toggle navigation"
-						style={{ border: "none" }}
-						onClick={() => setIsMenuOpen((prev) => !prev)}
-					>
-						<label className="hamburger">
-							<span className={`line line-main ${isMenuOpen ? "open" : ""}`}></span>
-							<span className={`line line-split ${isMenuOpen ? "open" : ""}`}></span>
-						</label>
-					</button>
 
 					<div
 						className={`navbar-collapse ${isMenuOpen ? "menu-open" : "menu-closed"}`}
@@ -78,6 +67,30 @@ const Navbar = () => {
 								</li>
 							))}
 						</ul>
+					</div>
+					<div className="navbar-actions">
+						<Tooltip title={isDark ? "Switch to light mode" : "Switch to dark mode"}>
+							<button
+								type="button"
+								className="theme-toggle"
+								onClick={changeTheme}
+								aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+							>
+								{isDark ? <FiSun fontSize="1.25rem" /> : <FiMoon fontSize="1.25rem" />}
+							</button>
+						</Tooltip>
+						<button
+							className="navbar-toggler"
+							type="button"
+							aria-label="Toggle navigation"
+							style={{ border: "none" }}
+							onClick={() => setIsMenuOpen((prev) => !prev)}
+						>
+							<label className="hamburger">
+								<span className={`line line-main ${isMenuOpen ? "open" : ""}`}></span>
+								<span className={`line line-split ${isMenuOpen ? "open" : ""}`}></span>
+							</label>
+						</button>
 					</div>
 				</div>
 			</nav>

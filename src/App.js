@@ -1,6 +1,4 @@
 import React, { useState, useEffect, Suspense } from "react";
-import { FiSun, FiMoon } from "react-icons/fi";
-import Tooltip from "@mui/material/Tooltip";
 import { initGA, trackEvent } from "./analytics";
 
 import Loader from "./Components/Loader/Loader";
@@ -44,18 +42,6 @@ const App = () => {
 			) : (
 				<StyleProvider value={{ isDark: isDark, changeTheme: changeTheme }}>
 					<div className={isDark ? "dark-mode App" : "App"}>
-						<div className="settings">
-							<Tooltip title={isDark ? "Switch to light mode" : "Switch to dark mode"}>
-								<button
-									type="button"
-									className="button settingsButton"
-									onClick={changeTheme}
-									aria-label="Toggle theme"
-								>
-									{isDark ? <FiSun fontSize="1.4rem" /> : <FiMoon fontSize="1.4rem" />}
-								</button>
-							</Tooltip>
-						</div>
 						<Navbar />
 						<Intro />
 						<Stack />
