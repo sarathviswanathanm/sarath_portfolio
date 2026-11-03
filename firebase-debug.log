@@ -1,0 +1,138 @@
+[debug] [2026-11-03T17:25:49.043Z] ----------------------------------------------------------------------
+[debug] [2026-11-03T17:25:49.045Z] Command:       /Users/sarath/.nvm/versions/node/v22.23.4/bin/node /Users/sarath/.nvm/versions/node/v22.23.4/bin/firebase deploy --only hosting
+[debug] [2026-11-03T17:25:49.045Z] CLI Version:   15.34.2
+[debug] [2026-11-03T17:25:49.045Z] Platform:      darwin
+[debug] [2026-11-03T17:25:49.045Z] Node Version:  v22.23.4
+[debug] [2026-11-03T17:25:49.045Z] Detected Agent: unknown
+[debug] [2026-11-03T17:25:49.045Z] Time:          Tue Nov 03 2026 21:25:49 GMT+0400 (Gulf Standard Time)
+[debug] [2026-11-03T17:25:49.045Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-11-03T17:25:49.733Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-11-03T17:25:49.733Z] > authorizing via signed-in user (sarathviswanathanm@gmail.com)
+[debug] [2026-11-03T17:25:49.733Z] [iam] checking project sarath-mv for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-11-03T17:25:49.738Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:49.738Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:49.739Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sarath-mv:testIamPermissions [none]
+[debug] [2026-11-03T17:25:49.739Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sarath-mv:testIamPermissions  x-goog-user-project=sarath-mv
+[debug] [2026-11-03T17:25:49.739Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sarath-mv:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-11-03T17:25:51.206Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sarath-mv:testIamPermissions 200
+[debug] [2026-11-03T17:25:51.206Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sarath-mv:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-11-03T17:25:51.207Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:51.207Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:51.207Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sarath-mv [none]
+[debug] [2026-11-03T17:25:51.747Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sarath-mv 200
+[debug] [2026-11-03T17:25:51.747Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sarath-mv {"projectId":"sarath-mv","projectNumber":"40688984523","displayName":"Sarath-mv","name":"projects/sarath-mv","resources":{"hostingSite":"sarath-mv"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_5d981ec3-8b8c-44dc-9ec8-bdc0a70e5f95"}
+[info] 
+[info] === Deploying to 'sarath-mv'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-11-03T17:25:51.750Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:51.750Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:51.750Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/sarath-mv/sites/sarath-mv [none]
+[debug] [2026-11-03T17:25:53.833Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/sarath-mv/sites/sarath-mv 200
+[debug] [2026-11-03T17:25:53.833Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/sarath-mv/sites/sarath-mv {"name":"projects/sarath-mv/sites/sarath-mv","defaultUrl":"https://sarath-mv.web.app","type":"DEFAULT_SITE"}
+[debug] [2026-11-03T17:25:53.837Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:53.837Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:53.838Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/sarath-mv/sites/sarath-mv/versions [none]
+[debug] [2026-11-03T17:25:53.839Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/sarath-mv/sites/sarath-mv/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-11-03T17:25:55.349Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/sarath-mv/sites/sarath-mv/versions 200
+[debug] [2026-11-03T17:25:55.350Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/sarath-mv/sites/sarath-mv/versions {"name":"projects/sarath-mv/sites/sarath-mv/versions/14ecaeea8a97047e","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[sarath-mv]: beginning deploy... 
+[info] i  hosting[sarath-mv]: found 23 files in build 
+[debug] [2026-11-03T17:25:55.373Z] [hosting] uploading with 200 concurrency
+[debug] [2026-11-03T17:25:55.723Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:55.724Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:55.725Z] [hosting] hash cache [YnVpbGQ] stored for 23 files
+[debug] [2026-11-03T17:25:55.725Z] [hosting][hash queue][FINAL] {"max":343,"min":11,"avg":47.56521739130435,"active":0,"complete":23,"success":23,"errored":0,"retried":0,"total":23,"elapsed":349}
+[debug] [2026-11-03T17:25:55.725Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/sarath-mv/sites/sarath-mv/versions/14ecaeea8a97047e:populateFiles [none]
+[debug] [2026-11-03T17:25:55.725Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/sarath-mv/sites/sarath-mv/versions/14ecaeea8a97047e:populateFiles {"files":{"/favicon.svg":"c227367b20747de5058b83ce668164a89faace0a80095d99098aea280ab529a4","/index.html":"3b308ba790ffb7b30dc5f8f43233a1bf519de8f97115fdae3e5ec924b2a9c923","/static/media/cursor.bcf4efceb44684ac4f025483013febb8.svg":"bf0d5463557b18fa1e604b1865ba33d538f54a8a512df6d46f6affd2170c785f","/asset-manifest.json":"fbc9315ce00dded3563c4ad95780aba38c384e93a47cc4d3cd0b0e11a8da94d8","/static/media/claudecode.c46e051fdc8ae4331e20e817980c7097.svg":"9c47fabaee58887f69be10e1dd2b0e3a68bcc268af98dd50b2ea5c67e7e9a5a3","/static/media/codex.8911b503202ded09acfb3fdbcc543084.svg":"c29237341df7924347f1ebe2bf128e6c568e950261af99407b87206d1abc91c1","/static/css/main.8995b21b.css.map":"2eb9c8607362ef0a6c2d9c81bc8648843ad5c86b27068886e8bb4b81e4e5213b","/static/js/main.5f839b67.js.LICENSE.txt":"b11c63d379929811ca9272a8c33338dd04b9fe395f21751bae0cec590ad420e5","/static/css/main.8995b21b.css":"c9fe9afe41d5c6c61856ca1b0c213ac07ac83b5c43e0167734eea2166cf9754a","/static/media/GECW_logo.cf82d68380dbfda1cd9d.png":"e3518fa0ade1b96aac80e6606d511cca7e4851ad1c8101c162aca2e1b09217f4","/static/media/Sarath_Viswanathan_M.f172dda783dcc2352d0e.pdf":"f4d0618588c7c17d43f56fdbc1bd6f87782f17e2a4c50cc43109677d47945c55","/static/media/Karkhana Logo.46b013d805f3384daab4.png":"0fbdc15c41178aea525c1cdc1c5181972e6cfd9fa51c478110f22a8fd548660d","/static/media/JNV.9affca66e286d596758b.png":"ff789c260444809af8cd3d055016da33d39f83721bfa502c17da2ecd2318016a","/static/media/WebDevelopment.39bf1b2f7af5094ed217.jpeg":"5bf93ee7fef361bc26dc5f37b018000fbd52f44b076d7e121176daafc2fd9c62","/static/media/AdminDashBoard.f2301de120c96798ca75.png":"e66cdec5601ed65d7006a71247afe69d3cf40672f47d44ca956a75489ce05194","/static/media/SarathIcon.a55b2ccefe3e407e9a04.jpg":"4b93787f93e5cb2617044a0ce34119a50a5d329f6704e62cc3c559434ab9f008","/static/media/CleanCoding.561c410c3323d1f7180a.jpg":"e084a1d293cd86f9774e0f0eab68af174b4ce97411b03fdcb2e09e272d470433","/static/media/WebSecurity.83f0e224a132f193a617.jpg":"8d103000897cbfec076d9a400b6d6c13f0e4e5dc7905a43701e7534161766aea","/static/media/SAFe5.10935d3eb4a28636d154.jpg":"7969a304ec08ae8ec33fe2123e1798f66e4d7f9f8d44d81298b22b457e2957c4","/static/media/AutomatedCostingEngine.233017a999ef302f3cbd.png":"f5d3b10e5051f882ae76fa9f089f15ce4d038b170b785c628714bcce93edf14f","/static/media/Karkhana Logo White.da3f6e350b227a9a32ed.png":"97384cde649e73d15a811697873981952dac3da1298f223b13354e1f33f52538","/static/js/main.5f839b67.js":"9a34fd9b742676612b148bc750462264411f5925292610d24f0215adf8f93694","/static/js/main.5f839b67.js.map":"22cef0677b1559e328902c928419af98cbd8f43a43f7b4b7b50bc5d77376aaa4"}}
+[debug] [2026-11-03T17:25:56.736Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/sarath-mv/sites/sarath-mv/versions/14ecaeea8a97047e:populateFiles 200
+[debug] [2026-11-03T17:25:56.737Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/sarath-mv/sites/sarath-mv/versions/14ecaeea8a97047e:populateFiles {"uploadRequiredHashes":["fbc9315ce00dded3563c4ad95780aba38c384e93a47cc4d3cd0b0e11a8da94d8","2eb9c8607362ef0a6c2d9c81bc8648843ad5c86b27068886e8bb4b81e4e5213b","22cef0677b1559e328902c928419af98cbd8f43a43f7b4b7b50bc5d77376aaa4","c9fe9afe41d5c6c61856ca1b0c213ac07ac83b5c43e0167734eea2166cf9754a","3b308ba790ffb7b30dc5f8f43233a1bf519de8f97115fdae3e5ec924b2a9c923","9a34fd9b742676612b148bc750462264411f5925292610d24f0215adf8f93694"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files"}
+[debug] [2026-11-03T17:25:56.737Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:56.737Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:56.737Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:56.737Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:56.737Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:56.737Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:56.738Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:56.738Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:56.738Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:56.738Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:56.738Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:56.738Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:56.738Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/fbc9315ce00dded3563c4ad95780aba38c384e93a47cc4d3cd0b0e11a8da94d8 [none]
+[debug] [2026-11-03T17:25:56.738Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/fbc9315ce00dded3563c4ad95780aba38c384e93a47cc4d3cd0b0e11a8da94d8 [stream]
+[debug] [2026-11-03T17:25:56.739Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/2eb9c8607362ef0a6c2d9c81bc8648843ad5c86b27068886e8bb4b81e4e5213b [none]
+[debug] [2026-11-03T17:25:56.739Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/2eb9c8607362ef0a6c2d9c81bc8648843ad5c86b27068886e8bb4b81e4e5213b [stream]
+[debug] [2026-11-03T17:25:56.739Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/22cef0677b1559e328902c928419af98cbd8f43a43f7b4b7b50bc5d77376aaa4 [none]
+[debug] [2026-11-03T17:25:56.739Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/22cef0677b1559e328902c928419af98cbd8f43a43f7b4b7b50bc5d77376aaa4 [stream]
+[debug] [2026-11-03T17:25:56.740Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/c9fe9afe41d5c6c61856ca1b0c213ac07ac83b5c43e0167734eea2166cf9754a [none]
+[debug] [2026-11-03T17:25:56.740Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/c9fe9afe41d5c6c61856ca1b0c213ac07ac83b5c43e0167734eea2166cf9754a [stream]
+[debug] [2026-11-03T17:25:56.740Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/3b308ba790ffb7b30dc5f8f43233a1bf519de8f97115fdae3e5ec924b2a9c923 [none]
+[debug] [2026-11-03T17:25:56.740Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/3b308ba790ffb7b30dc5f8f43233a1bf519de8f97115fdae3e5ec924b2a9c923 [stream]
+[debug] [2026-11-03T17:25:56.741Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/9a34fd9b742676612b148bc750462264411f5925292610d24f0215adf8f93694 [none]
+[debug] [2026-11-03T17:25:56.741Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/9a34fd9b742676612b148bc750462264411f5925292610d24f0215adf8f93694 [stream]
+[debug] [2026-11-03T17:25:56.744Z] [hosting][populate queue][FINAL] {"max":1015,"min":1015,"avg":1015,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1021}
+[debug] [2026-11-03T17:25:56.744Z] [hosting] uploads queued: 6
+[debug] [2026-11-03T17:25:57.970Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/2eb9c8607362ef0a6c2d9c81bc8648843ad5c86b27068886e8bb4b81e4e5213b 200
+[debug] [2026-11-03T17:25:57.970Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/2eb9c8607362ef0a6c2d9c81bc8648843ad5c86b27068886e8bb4b81e4e5213b [stream]
+[debug] [2026-11-03T17:25:57.987Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/fbc9315ce00dded3563c4ad95780aba38c384e93a47cc4d3cd0b0e11a8da94d8 200
+[debug] [2026-11-03T17:25:57.987Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/fbc9315ce00dded3563c4ad95780aba38c384e93a47cc4d3cd0b0e11a8da94d8 [stream]
+[debug] [2026-11-03T17:25:58.227Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/c9fe9afe41d5c6c61856ca1b0c213ac07ac83b5c43e0167734eea2166cf9754a 200
+[debug] [2026-11-03T17:25:58.228Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/c9fe9afe41d5c6c61856ca1b0c213ac07ac83b5c43e0167734eea2166cf9754a [stream]
+[debug] [2026-11-03T17:25:58.266Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/3b308ba790ffb7b30dc5f8f43233a1bf519de8f97115fdae3e5ec924b2a9c923 200
+[debug] [2026-11-03T17:25:58.266Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/3b308ba790ffb7b30dc5f8f43233a1bf519de8f97115fdae3e5ec924b2a9c923 [stream]
+[debug] [2026-11-03T17:25:58.634Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/9a34fd9b742676612b148bc750462264411f5925292610d24f0215adf8f93694 200
+[debug] [2026-11-03T17:25:58.634Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/9a34fd9b742676612b148bc750462264411f5925292610d24f0215adf8f93694 [stream]
+[debug] [2026-11-03T17:25:59.198Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/22cef0677b1559e328902c928419af98cbd8f43a43f7b4b7b50bc5d77376aaa4 200
+[debug] [2026-11-03T17:25:59.198Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/sarath-mv/versions/14ecaeea8a97047e/files/22cef0677b1559e328902c928419af98cbd8f43a43f7b4b7b50bc5d77376aaa4 [stream]
+[debug] [2026-11-03T17:25:59.198Z] [hosting][upload queue][FINAL] {"max":2461,"min":1233,"avg":1643,"active":0,"complete":6,"success":6,"errored":0,"retried":0,"total":6,"elapsed":2461}
+[info] ✔  hosting[sarath-mv]: file upload complete 
+[debug] [2026-11-03T17:25:59.198Z] [hosting] deploy completed after 3844ms
+[debug] [2026-11-03T17:25:59.198Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "/api/ai-assist",
+          "function": {
+            "functionId": "aiAssist",
+            "region": "us-central1"
+          }
+        }
+      ],
+      "site": "sarath-mv"
+    },
+    "version": "projects/sarath-mv/sites/sarath-mv/versions/14ecaeea8a97047e"
+  }
+]
+[info] i  hosting[sarath-mv]: finalizing version... 
+[debug] [2026-11-03T17:25:59.199Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:59.199Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:25:59.199Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/sarath-mv/locations/-/functions [none]
+[debug] [2026-11-03T17:26:00.274Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/sarath-mv/locations/-/functions 200
+[debug] [2026-11-03T17:26:00.275Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/sarath-mv/locations/-/functions {}
+[debug] [2026-11-03T17:26:00.275Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:26:00.275Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:26:00.276Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/sarath-mv/locations/-/functions filter=environment%3D%22GEN_2%22
+[debug] [2026-11-03T17:26:01.523Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/sarath-mv/locations/-/functions 200
+[debug] [2026-11-03T17:26:01.523Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/sarath-mv/locations/-/functions {"functions":[{"name":"projects/sarath-mv/locations/us-central1/functions/aiAssist","buildConfig":{"build":"projects/40688984523/locations/us-central1/builds/68c8de94-49f4-4248-8186-347c47720611","runtime":"nodejs22","entryPoint":"aiAssist","source":{"storageSource":{"bucket":"gcf-v2-sources-40688984523-us-central1","object":"aiAssist/function-source.zip","generation":"1793726094365378"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRepository":"projects/sarath-mv/locations/us-central1/repositories/gcf-artifacts","sourceProvenance":{"resolvedStorageSource":{"bucket":"gcf-v2-sources-40688984523-us-central1","object":"aiAssist/function-source.zip","generation":"1793726094365378"}},"dockerRegistry":"ARTIFACT_REGISTRY","serviceAccount":"projects/sarath-mv/serviceAccounts/40688984523-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/sarath-mv/locations/us-central1/services/aiassist","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"sarath-mv\",\"storageBucket\":\"sarath-mv.firebasestorage.app\"}","GCLOUD_PROJECT":"sarath-mv","EVENTARC_CLOUD_EVENT_SOURCE":"projects/sarath-mv/locations/us-central1/services/aiAssist","FUNCTION_REGION":"us-central1","FUNCTION_TARGET":"aiAssist","LOG_EXECUTION_ID":"true"},"maxInstanceCount":3,"ingressSettings":"ALLOW_ALL","uri":"https://aiassist-uup3y5wg7a-uc.a.run.app","serviceAccountEmail":"40688984523-compute@developer.gserviceaccount.com","availableMemory":"256Mi","allTrafficOnLatestRevision":true,"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY","projectId":"sarath-mv","secret":"OPENAI_API_KEY","version":"1"}],"revision":"aiassist-00001-tor","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"state":"ACTIVE","updateTime":"2026-11-03T17:16:02.813208333Z","labels":{"deployment-tool":"cli-firebase","firebase-functions-hash":"176bad4626c59a50faf4e7eac73c07ded672ed15"},"environment":"GEN_2","url":"https://us-central1-sarath-mv.cloudfunctions.net/aiAssist","createTime":"2026-11-03T17:14:54.763302140Z","satisfiesPzi":true}]}
+[debug] [2026-11-03T17:26:01.524Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:26:01.524Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:26:01.524Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/sarath-mv/sites/sarath-mv/versions/14ecaeea8a97047e updateMask=status%2Cconfig
+[debug] [2026-11-03T17:26:01.524Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/sarath-mv/sites/sarath-mv/versions/14ecaeea8a97047e {"status":"FINALIZED","config":{"rewrites":[{"glob":"/api/ai-assist","run":{"serviceId":"aiassist","region":"us-central1"}}]}}
+[debug] [2026-11-03T17:26:03.566Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/sarath-mv/sites/sarath-mv/versions/14ecaeea8a97047e 200
+[debug] [2026-11-03T17:26:03.566Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/sarath-mv/sites/sarath-mv/versions/14ecaeea8a97047e {"name":"projects/sarath-mv/sites/sarath-mv/versions/14ecaeea8a97047e","status":"FINALIZED","config":{"rewrites":[{"glob":"/api/ai-assist","run":{"serviceId":"aiassist","region":"us-central1"}}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-11-03T17:25:54.426594Z","createUser":{"email":"sarathviswanathanm@gmail.com"},"finalizeTime":"2026-11-03T17:26:03.465469Z","finalizeUser":{"email":"sarathviswanathanm@gmail.com"}}
+[debug] [2026-11-03T17:26:03.566Z] [hosting] finalized version for sarath-mv:[object Object]
+[info] ✔  hosting[sarath-mv]: version finalized 
+[info] i  hosting[sarath-mv]: releasing new version... 
+[debug] [2026-11-03T17:26:03.566Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:26:03.566Z] Checked if tokens are valid: true, expires at: 1793728960085
+[debug] [2026-11-03T17:26:03.566Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/sarath-mv/sites/sarath-mv/channels/live/releases versionName=projects%2Fsarath-mv%2Fsites%2Fsarath-mv%2Fversions%2F14ecaeea8a97047e
+[debug] [2026-11-03T17:26:03.566Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/sarath-mv/sites/sarath-mv/channels/live/releases {}

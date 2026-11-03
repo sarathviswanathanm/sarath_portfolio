@@ -5,6 +5,29 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/ai-assist",
+        "function": {
+          "functionId": "aiAssist",
+          "region": "us-central1"
+        }
+      }
     ]
+  },
+  "functions": {
+    "source": "functions"
+  },
+  "emulators": {
+    "functions": {
+      "port": 5001
+    },
+    "hosting": {
+      "port": 5050
+    },
+    "ui": {
+      "enabled": true
+    }
   }
 }

@@ -12,6 +12,8 @@ import {
 	FaReact,
 	FaCode,
 	FaNetworkWired,
+	FaLock,
+	FaGlobe,
 } from "react-icons/fa";
 import {
 	SiTypescript,
@@ -32,6 +34,20 @@ import {
 	SiSentry,
 	SiDatadog,
 	SiGoogleanalytics,
+	SiSass,
+	SiStyledcomponents,
+	SiJest,
+	SiTestinglibrary,
+	SiEslint,
+	SiFigma,
+	SiGoogletagmanager,
+	SiNodedotjs,
+	SiExpress,
+	SiMysql,
+	SiFirebase,
+	SiLinux,
+	SiRazorpay,
+	SiOpenai,
 } from "react-icons/si";
 
 const Stack = () => {
@@ -47,35 +63,59 @@ const Stack = () => {
 		});
 	}, []);
 
+	const c = "#fca61f";
 	const stacks = [
-		{ skillName: "HTML5", icon: <FaHtml5 color="#fca61f" /> },
-		{ skillName: "CSS3", icon: <FaCss3Alt color="#fca61f" /> },
-		{ skillName: "TypeScript", icon: <SiTypescript color="#fca61f" /> },
-		{ skillName: "JavaScript", icon: <SiJavascript color="#fca61f" /> },
-		{ skillName: "React", icon: <FaReact color="#fca61f" /> },
-		{ skillName: "Redux Toolkit", icon: <SiRedux color="#fca61f" /> },
-		{ skillName: "Three.js", icon: <SiThreedotjs color="#fca61f" /> },
-		{ skillName: "Chakra UI", icon: <SiChakraui color="#fca61f" /> },
-		{ skillName: "Tailwind CSS", icon: <SiTailwindcss color="#fca61f" /> },
-		{ skillName: "Vite", icon: <SiVite color="#fca61f" /> },
-		{ skillName: "Storybook", icon: <SiStorybook color="#fca61f" /> },
-		{ skillName: "Git", icon: <SiGit color="#fca61f" /> },
-		{ skillName: "Cypress", icon: <SiCypress color="#fca61f" /> },
-		{ skillName: "React Context API", icon: <FaReact color="#fca61f" /> },
-		{ skillName: "RemixJS", icon: <FaReact color="#fca61f" /> },
-		{ skillName: "React Router", icon: <SiReactrouter color="#fca61f" /> },
-		{ skillName: "Fluent UI", icon: <SiMicrosoft color="#fca61f" /> },
-		{ skillName: "TeamsJS", icon: <SiMicrosoftteams color="#fca61f" /> },
-		{ skillName: "Axios", icon: <FaCode color="#fca61f" /> },
-		{ skillName: "Webpack", icon: <SiWebpack color="#fca61f" /> },
-		{ skillName: "GitHub", icon: <SiGithub color="#fca61f" /> },
-		{ skillName: "WebSockets", icon: <FaNetworkWired color="#fca61f" /> },
-		{ skillName: "Sentry", icon: <SiSentry color="#fca61f" /> },
-		{ skillName: "Datadog RUM", icon: <SiDatadog color="#fca61f" /> },
-		{ skillName: "Google Analytics", icon: <SiGoogleanalytics color="#fca61f" /> },
-		{ skillName: "Claude Code", icon: <ClaudeCodeIcon color="#fca61f" aria-hidden="true" /> },
-		{ skillName: "Codex", icon: <CodexIcon color="#fca61f" aria-hidden="true" /> },
-		{ skillName: "Cursor", icon: <CursorIcon color="#fca61f" aria-hidden="true" /> },
+		// Core frontend
+		{ skillName: "React", icon: <FaReact color={c} /> },
+		{ skillName: "TypeScript", icon: <SiTypescript color={c} /> },
+		{ skillName: "JavaScript", icon: <SiJavascript color={c} /> },
+		{ skillName: "HTML5", icon: <FaHtml5 color={c} /> },
+		{ skillName: "CSS3", icon: <FaCss3Alt color={c} /> },
+		{ skillName: "SCSS", icon: <SiSass color={c} /> },
+		{ skillName: "Redux Toolkit", icon: <SiRedux color={c} /> },
+		{ skillName: "React Context API", icon: <FaReact color={c} /> },
+		{ skillName: "React Router", icon: <SiReactrouter color={c} /> },
+		{ skillName: "RemixJS", icon: <FaReact color={c} /> },
+		// Design systems & UI
+		{ skillName: "Storybook", icon: <SiStorybook color={c} /> },
+		{ skillName: "Chakra UI", icon: <SiChakraui color={c} /> },
+		{ skillName: "styled-components", icon: <SiStyledcomponents color={c} /> },
+		{ skillName: "Tailwind CSS", icon: <SiTailwindcss color={c} /> },
+		{ skillName: "Fluent UI", icon: <SiMicrosoft color={c} /> },
+		{ skillName: "Figma-to-Code", icon: <SiFigma color={c} /> },
+		// APIs, real-time, auth & visualisation
+		{ skillName: "Axios / REST", icon: <FaCode color={c} /> },
+		{ skillName: "WebSockets", icon: <FaNetworkWired color={c} /> },
+		{ skillName: "OAuth / SSO", icon: <FaLock color={c} /> },
+		{ skillName: "i18n", icon: <FaGlobe color={c} /> },
+		{ skillName: "Razorpay", icon: <SiRazorpay color={c} /> },
+		{ skillName: "Three.js", icon: <SiThreedotjs color={c} /> },
+		{ skillName: "TeamsJS", icon: <SiMicrosoftteams color={c} /> },
+		// Testing & quality
+		{ skillName: "Jest", icon: <SiJest color={c} /> },
+		{ skillName: "React Testing Library", icon: <SiTestinglibrary color={c} /> },
+		{ skillName: "Cypress", icon: <SiCypress color={c} /> },
+		{ skillName: "ESLint", icon: <SiEslint color={c} /> },
+		// Observability & analytics
+		{ skillName: "Sentry", icon: <SiSentry color={c} /> },
+		{ skillName: "Datadog RUM", icon: <SiDatadog color={c} /> },
+		{ skillName: "GA4", icon: <SiGoogleanalytics color={c} /> },
+		{ skillName: "Google Tag Manager", icon: <SiGoogletagmanager color={c} /> },
+		// Tooling, backend & delivery
+		{ skillName: "Vite", icon: <SiVite color={c} /> },
+		{ skillName: "Webpack", icon: <SiWebpack color={c} /> },
+		{ skillName: "Git", icon: <SiGit color={c} /> },
+		{ skillName: "GitHub", icon: <SiGithub color={c} /> },
+		{ skillName: "Firebase", icon: <SiFirebase color={c} /> },
+		{ skillName: "Node.js", icon: <SiNodedotjs color={c} /> },
+		{ skillName: "Express", icon: <SiExpress color={c} /> },
+		{ skillName: "MySQL", icon: <SiMysql color={c} /> },
+		{ skillName: "Linux", icon: <SiLinux color={c} /> },
+		// AI
+		{ skillName: "OpenAI API", icon: <SiOpenai color={c} /> },
+		{ skillName: "Claude Code", icon: <ClaudeCodeIcon color={c} aria-hidden="true" /> },
+		{ skillName: "Codex", icon: <CodexIcon color={c} aria-hidden="true" /> },
+		{ skillName: "Cursor", icon: <CursorIcon color={c} aria-hidden="true" /> },
 	];
 	return (
 		<Fade bottom duration={1000} distance="40px">
@@ -99,34 +139,46 @@ const Stack = () => {
 						</ul>
 						<ul className="stackDesc">
 							<li>
-								Built production apps with React, TypeScript, Redux Toolkit,
-								and Chakra UI / Tailwind CSS
+								Large-scale React and TypeScript SPAs, including nearly 4 years
+								shaping frontend architecture for a multi-tenant SaaS platform
+								serving 200+ manufacturer accounts
 							</li>
 							<li>
-								Real-time 3D CAD rendering with Three.js in a manufacturing
-								costing engine
+								State management with Redux Toolkit and Context API; routing
+								with React Router and Remix; forms with Formik and Yup
 							</li>
 							<li>
-								Developed and maintained company-wide design system with
-								Storybook and Vite
+								Company-wide design system with Storybook, Chakra UI and Vite
+								across 4+ portals, plus Figma-to-code delivery and keyboard
+								accessibility
 							</li>
 							<li>
-								Testing with Cypress, Jest, and React Testing Library; REST API integration
-								with Axios and Frappe
+								Performance standards: Core Web Vitals, code splitting, lazy
+								loading, rendering optimisation and PWAs, holding initial load
+								under 1.8s with Lighthouse 90+
 							</li>
 							<li>
-								Frontend and component architecture, design systems, Core Web
-								Vitals, code splitting, lazy loading, and Progressive Web Apps
+								REST APIs, WebSockets and webhooks; OAuth, Google and Microsoft
+								SSO, role-based access control, i18n, Frappe/ERPNext and
+								Razorpay integrations
 							</li>
 							<li>
-								Microsoft Teams Tab Apps with the Teams JavaScript SDK and Fluent UI
+								Data visualisation with Three.js 3D/CAD, Recharts, Chart.js and
+								React Table, with virtualisation for large datasets
 							</li>
 							<li>
-								CI/CD pipelines, Agile, SAFe 5, and clean coding practices
+								Quality and observability: Jest, React Testing Library, Cypress,
+								cross-browser testing, Sentry, Datadog RUM, GA4, Google Tag
+								Manager and A/B testing
 							</li>
 							<li>
-								AI-assisted development with Cursor, Claude Code, and Codex for
-								code analysis, architecture planning, and debugging
+								Delivery: CI/CD, Firebase (Google Cloud), Node.js/Express, MySQL,
+								Linux, Microsoft Teams tab apps, Agile/Scrum and SAFe 5
+							</li>
+							<li>
+								AI: built this portfolio&apos;s AI Assist chatbot with the OpenAI
+								API and Firebase Cloud Functions; AI-assisted development with
+								Cursor, Claude Code and Codex
 							</li>
 						</ul>
 					</Fade>

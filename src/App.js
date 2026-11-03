@@ -14,6 +14,7 @@ import Projects from "./Components/Projects/Projects";
 import Education from "./Components/Education/Education";
 import Gallery from "./Components/Gallery/Gallery";
 import Footer from "./Components/Footer/Footer";
+import AIAssistChat from "./Components/AIAssistChat/AIAssistChat";
 
 const App = () => {
 	const [isDark, setIsDark] = useState(true);
@@ -52,6 +53,7 @@ const App = () => {
 						<Gallery />
 						<Footer />
 					</div>
+					<AIAssistChat />
 					<MoveToTop />
 				</StyleProvider>
 			)}
